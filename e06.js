@@ -25,10 +25,14 @@ function without(array) {
         found = false;
         for (let j = 0; j < arguments.length; j++) {
             if (arguments[j] == array[i]) { 
-                found = true; }
+                found = true; 
+            }
         }
-        if (!found) { tab.push(array[i]); }
+        if (!found) { 
+            tab.push(array[i]); 
+        }
     }
     return tab;
 }
+
 console.log(without([1, 2, 1, 0, 3, 1, 4], 0, 1, 3, 4));
