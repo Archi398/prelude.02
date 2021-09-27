@@ -1,5 +1,5 @@
 function initial(array, n = 1){
-    for (let i = 0; i < array.length; i++) {
+    for (let i = array.length; i > 0; i--) {
         if (array[i] === n) {
             array.splice(i, 1)
             return array
@@ -7,4 +7,4 @@ function initial(array, n = 1){
     }
 }
 
-console.log(initial([5, 4, 3, 2, 1], 3))
+console.log(initial([5, 4, 3, 2, 1, 4], 4))
