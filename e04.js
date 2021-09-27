@@ -1,5 +1,9 @@
-function initial(array, n = 1){
-    
+function rest(array, index = 1) {
+    let lastItem = [];
+    for (let i = index; i < array.length; i++) {
+        lastItem.push(array[i]);
+    }
+    return lastItem;
 }
 
-console.log(initial([5, 4, 3, 2, 1, 4]))
+console.log(rest([5, 4, 3, 2, 1]));
