@@ -1,4 +1,4 @@
-function union() {
+function intersection() {
     let tab = [];
     for (let i = 1; i < arguments.length; i++) {
         for (let j = 0; j <= arguments.length; j++) {
@@ -10,4 +10,4 @@ function union() {
     return tab
 }
 
-console.log(union([1, 2, 3], [3, 101, 2, 1, 10], [2, 1, 4, 3]));
+console.log(intersection([1, 2, 3], [3, 101, 2, 1, 10], [2, 1, 4, 3]));
